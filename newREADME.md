@@ -1,4 +1,4 @@
-# sd
+# s
   ### sc
 
 
@@ -18,7 +18,7 @@
   
   ## Usage
   
-  cds
+  sd
   
   ## License
 
@@ -26,17 +26,20 @@
           For more information, visit: https://opensource.org/licenses/Apache-2.0        
   
 
+  ![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)(https://opensource.org/licenses/Apache-2.0)
+
+
   ## Contributing
   
-  cd
+  cdscsd
   
   ## Tests
   
-  ssd
+  csc
   
   ## Questions
   
   For any more questions, contact at: 
   
-  sdc
-  ds
+  cs
+  cs
