@@ -58,7 +58,18 @@ const questions = [
   {
     type: "input",
     name: "projectLicense",
-    message: "Enter the license this project used: ",
+    message: "Choose the license this project used: ",
+    choices: [
+      "Apache",
+      "Boost",
+      "BSD",
+      "Creative Commons",
+      "Eclipse",
+      "GNU",
+      "MIT",
+      "Mozilla",
+      "None",
+    ],
     validate: (response) => {
       if (!response) {
         return console.log("This response is required.");
