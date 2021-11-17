@@ -125,7 +125,9 @@ function writeToFile(fileName, data) {
     if (err) {
       console.error("ERROR: " + err);
     } else {
-      console.log("SUCCESS: A UNIQUE README FILE HAS BEEN GENERATED");
+      console.log(
+        "SUCCESS: A UNIQUE README FILE HAS BEEN GENERATED FOR YOUR PROJECT"
+      );
     }
   });
 }
@@ -134,7 +136,7 @@ function writeToFile(fileName, data) {
 function init() {
   inquirer
     .prompt(questions)
-    .then((data) => writeToFile("tester.md", generateMarkdown(data)));
+    .then((data) => writeToFile("newREADME.md", generateMarkdown(data)));
 }
 
 // Function call to initialize app
