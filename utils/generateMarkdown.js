@@ -5,38 +5,18 @@ function renderLicenseBadge(license) {}
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  let curLicenceLink;
-  switch (license) {
-    case "Apache":
-      curLicenceLink = `https://opensource.org/licenses/Apache-2.0`;
-      return curLicenceLink;
-    case "Boost":
-      curLicenceLink = `https://www.boost.org/LICENSE_1_0.txt`;
-      return curLicenceLink;
-    case "BSD":
-      curLicenceLink = `https://opensource.org/licenses/BSD-3-Clause`;
-      return curLicenceLink;
-    case "Creative Commons":
-      curLicenceLink = `http://creativecommons.org/publicdomain/zero/1.0/`;
-      return curLicenceLink;
-    case "Eclipse":
-      curLicenceLink = `https://opensource.org/licenses/EPL-1.0`;
-      return curLicenceLink;
-    case "GNU":
-      curLicenceLink = `https://www.gnu.org/licenses/gpl-3.0`;
-      return curLicenceLink;
-    case "MIT":
-      curLicenceLink = `https://opensource.org/licenses/MIT`;
-      return curLicenceLink;
-    case "Mozilla":
-      curLicenceLink = `https://opensource.org/licenses/MPL-2.0`;
-      return curLicenceLink;
-    case "None":
-      return "";
-
-    default:
-      break;
-  }
+  let licenseLinks = {
+    Apache: `https://opensource.org/licenses/Apache-2.0`,
+    Boost: `https://www.boost.org/LICENSE_1_0.txt`,
+    BSD: `https://opensource.org/licenses/BSD-3-Clause`,
+    "Creative Commons": `http://creativecommons.org/publicdomain/zero/1.0/`,
+    Eclipse: `https://opensource.org/licenses/EPL-1.0`,
+    GNU: `https://www.gnu.org/licenses/gpl-3.0`,
+    MIT: `https://opensource.org/licenses/MIT`,
+    Mozilla: `https://opensource.org/licenses/MPL-2.0`,
+    None: "",
+  };
+  return licenseLinks[license];
 }
 
 // TODO: Create a function that returns the license section of README
@@ -74,7 +54,6 @@ function generateMarkdown(data) {
   ## License
 
   ${renderLicenseSection(data.projectLicense)}
-
 
   ## Contributing
   
